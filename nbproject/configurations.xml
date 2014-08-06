@@ -4,6 +4,37 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="Config" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Database" projectFiles="true">
+        <logicalFolder name="f1"
+                       displayName="Constraints &amp; Restraints"
+                       projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Damping" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="Diaphragms" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="Forces" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="Geometry" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="Nodes" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="Walls" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Debug" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Elements" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="Output" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="Sections" projectFiles="true">
+      </logicalFolder>
+      <itemPath>FloatCompare.h</itemPath>
+      <itemPath>Model.h</itemPath>
+      <itemPath>TimeHistory.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,6 +43,37 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f3" displayName="Config" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="Database" projectFiles="true">
+        <logicalFolder name="f4"
+                       displayName="Constraints &amp; Restraints"
+                       projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Damping" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="Diaphragms" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="Forces" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="Geometry" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="Nodes" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="Walls" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="Debug" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="Elements" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Output" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Sections" projectFiles="true">
+      </logicalFolder>
+      <itemPath>FloatCompare.cpp</itemPath>
+      <itemPath>Model.cpp</itemPath>
+      <itemPath>TimeHistory.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -36,6 +98,18 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="FloatCompare.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FloatCompare.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TimeHistory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TimeHistory.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -59,6 +133,18 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="FloatCompare.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FloatCompare.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TimeHistory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TimeHistory.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
