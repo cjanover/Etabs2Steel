@@ -5,32 +5,59 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="f1" displayName="Config" projectFiles="true">
+        <itemPath>Config.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="Database" projectFiles="true">
         <logicalFolder name="f1"
                        displayName="Constraints &amp; Restraints"
                        projectFiles="true">
+          <itemPath>FoundationNode.h</itemPath>
+          <itemPath>NodalRestraint.h</itemPath>
+          <itemPath>PointSpring.h</itemPath>
+          <itemPath>Releases.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="Damping" projectFiles="true">
+          <itemPath>SpecialColumn.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f3" displayName="Diaphragms" projectFiles="true">
+          <itemPath>VerticalConstraint.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f4" displayName="Forces" projectFiles="true">
+          <itemPath>LoadCombination.h</itemPath>
+          <itemPath>LoadPattern.h</itemPath>
+          <itemPath>StaticLoad.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f5" displayName="Geometry" projectFiles="true">
+          <itemPath>Coord.h</itemPath>
+          <itemPath>Grid.h</itemPath>
+          <itemPath>Story.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f6" displayName="Nodes" projectFiles="true">
+          <itemPath>EtabsNode.h</itemPath>
+          <itemPath>Node.h</itemPath>
+          <itemPath>SteelNode.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f7" displayName="Walls" projectFiles="true">
+          <itemPath>DeckProp.h</itemPath>
+          <itemPath>EtabsAreaProps.h</itemPath>
+          <itemPath>EtabsWall.h</itemPath>
+          <itemPath>SteelArea.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f3" displayName="Debug" projectFiles="true">
+        <itemPath>Debug.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="Elements" projectFiles="true">
+        <itemPath>Element.h</itemPath>
+        <itemPath>EtabsLine.h</itemPath>
+        <itemPath>SteelLine.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f5" displayName="Output" projectFiles="true">
+        <itemPath>Parse.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f6" displayName="Sections" projectFiles="true">
+        <itemPath>Slab.h</itemPath>
+        <itemPath>SteelSection.h</itemPath>
       </logicalFolder>
       <itemPath>FloatCompare.h</itemPath>
       <itemPath>Model.h</itemPath>
@@ -44,32 +71,70 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f3" displayName="Config" projectFiles="true">
+        <itemPath>Config.cpp</itemPath>
+        <itemPath>ConfigFunctions.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f5" displayName="Database" projectFiles="true">
         <logicalFolder name="f4"
                        displayName="Constraints &amp; Restraints"
                        projectFiles="true">
+          <itemPath>FoundationNode.cpp</itemPath>
+          <itemPath>NodalRestraint.cpp</itemPath>
+          <itemPath>PointSpring.cpp</itemPath>
+          <itemPath>PointSpringFunctions.cpp</itemPath>
+          <itemPath>Releases.cpp</itemPath>
+          <itemPath>RestraintFunctions.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="Damping" projectFiles="true">
+          <itemPath>DampingFunctions.cpp</itemPath>
+          <itemPath>SpecialColumn.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f3" displayName="Diaphragms" projectFiles="true">
+          <itemPath>Diaphragm.cpp</itemPath>
+          <itemPath>VerticalConnFunctions.cpp</itemPath>
+          <itemPath>VerticalConstraint.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f6" displayName="Forces" projectFiles="true">
+          <itemPath>LoadCombination.cpp</itemPath>
+          <itemPath>LoadPattern.cpp</itemPath>
+          <itemPath>ModelForces.cpp</itemPath>
+          <itemPath>StaticLoad.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f7" displayName="Geometry" projectFiles="true">
+          <itemPath>Coord.cpp</itemPath>
+          <itemPath>Grid.cpp</itemPath>
+          <itemPath>Story.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f5" displayName="Nodes" projectFiles="true">
+          <itemPath>EtabsNode.cpp</itemPath>
+          <itemPath>Node.cpp</itemPath>
+          <itemPath>SteelNode.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="Walls" projectFiles="true">
+          <itemPath>DeckProp.cpp</itemPath>
+          <itemPath>EtabsAreaProps.cpp</itemPath>
+          <itemPath>EtabsWall.cpp</itemPath>
+          <itemPath>SteelArea.cpp</itemPath>
+          <itemPath>WallFunctions.cpp</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f6" displayName="Debug" projectFiles="true">
+        <itemPath>Debug.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="Elements" projectFiles="true">
+        <itemPath>Element.cpp</itemPath>
+        <itemPath>EtabsLine.cpp</itemPath>
+        <itemPath>NewElement.cpp</itemPath>
+        <itemPath>SteelLine.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="Output" projectFiles="true">
+        <itemPath>OutputModel.cpp</itemPath>
+        <itemPath>Parse.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="Sections" projectFiles="true">
+        <itemPath>SectionFunctions.cpp</itemPath>
+        <itemPath>Slab.cpp</itemPath>
+        <itemPath>SteelSection.cpp</itemPath>
       </logicalFolder>
       <itemPath>FloatCompare.cpp</itemPath>
       <itemPath>Model.cpp</itemPath>
@@ -97,18 +162,151 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
       </compileType>
+      <item path="Config.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConfigFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Coord.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Coord.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DampingFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Debug.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DeckProp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DeckProp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Diaphragm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Element.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Element.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsAreaProps.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsAreaProps.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsWall.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsWall.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="FloatCompare.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FloatCompare.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FoundationNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FoundationNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Grid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Grid.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LoadCombination.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LoadCombination.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LoadPattern.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LoadPattern.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Model.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Model.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ModelForces.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NewElement.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NodalRestraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NodalRestraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Node.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OutputModel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Parse.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Parse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PointSpring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PointSpring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PointSpringFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Releases.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Releases.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RestraintFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SectionFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Slab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Slab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SpecialColumn.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SpecialColumn.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="StaticLoad.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="StaticLoad.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelArea.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelArea.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelSection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelSection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Story.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Story.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="TimeHistory.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TimeHistory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VerticalConnFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VerticalConstraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VerticalConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WallFunctions.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -133,17 +331,147 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Config.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ConfigFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Coord.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Coord.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DampingFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Debug.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DeckProp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DeckProp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Diaphragm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Element.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Element.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsAreaProps.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsAreaProps.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EtabsWall.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EtabsWall.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="FloatCompare.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FloatCompare.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FoundationNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FoundationNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Grid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Grid.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LoadCombination.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LoadCombination.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LoadPattern.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LoadPattern.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Model.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Model.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ModelForces.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NewElement.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NodalRestraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NodalRestraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Node.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OutputModel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Parse.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Parse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PointSpring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PointSpring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PointSpringFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Releases.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Releases.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RestraintFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SectionFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Slab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Slab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SpecialColumn.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SpecialColumn.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="StaticLoad.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="StaticLoad.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelArea.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelArea.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SteelSection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SteelSection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Story.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Story.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="TimeHistory.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TimeHistory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VerticalConnFunctions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VerticalConstraint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VerticalConstraint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="WallFunctions.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
