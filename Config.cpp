@@ -214,56 +214,56 @@ std::ostream& operator<<(std::ostream& os, Config& config)
     
     
 
-    unsigned long nnp = stol(*config.GetConfigStart("NNP"));
-    unsigned long nel = stol(*config.GetConfigStart("NEL"));
-    unsigned int nnpfn = stoi(*config.GetConfigStart("NNPFN"));
-    unsigned int nbel = stoi(*config.GetConfigStart("NBEL"));
-    unsigned int nconel = toi(*config.GetConfigStart("NCONEL"));
-    unsigned int nnpbf = stoi(*config.GetConfigStart("NNPBF"));
-    unsigned int nvconel = stoi(*config.GetConfigStart("NVCONEL"));
-    unsigned int nss = stoi(*config.GetConfigStart("NSS"));
+    unsigned long nnp = std::stol(*config.GetConfigStart("NNP"));
+    unsigned long nel = std::stol(*config.GetConfigStart("NEL"));
+    unsigned int nnpfn = std::stoi(*config.GetConfigStart("NNPFN"));
+    unsigned int nbel = std::stoi(*config.GetConfigStart("NBEL"));
+    unsigned int nconel = std::stoi(*config.GetConfigStart("NCONEL"));
+    unsigned int nnpbf = std::stoi(*config.GetConfigStart("NNPBF"));
+    unsigned int nvconel = std::stoi(*config.GetConfigStart("NVCONEL"));
+    unsigned int nss = std::stoi(*config.GetConfigStart("NSS"));
 
     std::string nds = *config.GetConfigStart("NDS");
-    unsigned long nrth = stol(*config.GetConfigStart("NRTH"));
+    unsigned long nrth = std::stol(*config.GetConfigStart("NRTH"));
     
-    unsigned int mig = stoi(*config.GetConfigStart("MIG"));
-    unsigned int nc = stoi(*config.GetConfigStart("NC"));
-    unsigned int mtp = stoi(*config.GetConfigStart("MTP"));
-    unsigned int ndim = stoi(*config.GetConfigStart("NDIM"));
+    unsigned int mig = std::stoi(*config.GetConfigStart("MIG"));
+    unsigned int nc = std::stoi(*config.GetConfigStart("NC"));
+    unsigned int mtp = std::stoi(*config.GetConfigStart("MTP"));
+    unsigned int ndim = std::stoi(*config.GetConfigStart("NDIM"));
     
     //NNP, NEL, NNPFN, NBEL, NCONEL, NNPBF, NVCONEL, NSS, NDS, NRTH, MIG, NC, MTP, NDIM
     os<<nnp<<" "<<nel<<" "<<nnpfn<<" "<<nbel<<" "<<nconel<<" "<<nnpbf<<" "<<nvconel<<" "<<nss<<" "<<nds<<" "<<nrth<<" "<<mig<<" "<<nc<<" "<<mtp<<" "<<ndim<<std::endl;
     
     
-    float dt = stof(*config.GetConfigStart("DT"));
-    float beta = stof(*config.GetConfigStart("BETA"));
-    float gamma = stof(*config.GetConfigStart("GAMMA"));
-    float a0 = stof(*config.GetConfigStart("A0"));
-    float a1 = stof(*config.GetConfigStart("A1"));
-    float a2 = stof(*config.GetConfigStart("A2"));
-    float a3 = stof(*config.GetConfigStart("A3"));
-    float agrav = stof(*config.GetConfigStart("AGRAV"));
-    float tol1 = stof(*config.GetConfigStart("TOL1"));
-    float tol3 = stof(*config.GetConfigStart("TOL3"));
-    float tol5 = stof(*config.GetConfigStart("TOL5"));
-    float tol7 = stof(*config.GetConfigStart("TOL7"));
-    float alphac = stof(*config.GetConfigStart("ALPHAC"));
+    float dt = std::stof(*config.GetConfigStart("DT"));
+    float beta = std::stof(*config.GetConfigStart("BETA"));
+    float gamma = std::stof(*config.GetConfigStart("GAMMA"));
+    float a0 = std::stof(*config.GetConfigStart("A0"));
+    float a1 = std::stof(*config.GetConfigStart("A1"));
+    float a2 = std::stof(*config.GetConfigStart("A2"));
+    float a3 = std::stof(*config.GetConfigStart("A3"));
+    float agrav = std::stof(*config.GetConfigStart("AGRAV"));
+    float tol1 = std::stof(*config.GetConfigStart("TOL1"));
+    float tol3 = std::stof(*config.GetConfigStart("TOL3"));
+    float tol5 = std::stof(*config.GetConfigStart("TOL5"));
+    float tol7 = std::stof(*config.GetConfigStart("TOL7"));
+    float alphac = std::stof(*config.GetConfigStart("ALPHAC"));
     
     //DT, BETA, GAMMA, A0, A1, A2, A3, AGRAV, (TOL(I), I=1,7,2)
     os<<dt<<" "<<beta<<" "<<gamma<<" "<<a0<<" "<<a1<<" "<<a2<<" "<<a3<<" "<<agrav<<" "<<tol1<<" "<<tol3<<" "<<tol5<<" "<<tol7<<" "<<alphac<<std::endl;
     
     
-    float eec = stof(*config.GetConfigStart("EEC"));
-    float nsefbc = stof(*config.GetConfigStart("NSEFBC"));
-    float nsefr = stof(*config.GetConfigStart("NSEFBR"));
-    float milf = stof(*config.GetConfigStart("MILF"));
+    float eec = std::stof(*config.GetConfigStart("EEC"));
+    float nsefbc = std::stof(*config.GetConfigStart("NSEFBC"));
+    float nsefr = std::stof(*config.GetConfigStart("NSEFBR"));
+    float milf = std::stof(*config.GetConfigStart("MILF"));
     
     //EEC, NSEFBC, NSEFBR, MILF
     os<<eec<<" "<<nsefbc<<" "<<nsefr<<" "<<milf<<std::endl;
 
 
-    float irint = stof(*config.GetConfigStart("IRINT"));
-    int irout = stoi(*config.GetConfigStart("IROUT"));
+    float irint = std::stof(*config.GetConfigStart("IRINT"));
+    int irout = std::stoi(*config.GetConfigStart("IROUT"));
     
     std::string istop;
     if (config.GetConfigSize("ISTOP") == 0)

@@ -25,8 +25,6 @@ extern std::map <std::string, std::string> PARSESTRINGS;
 extern std::string workingDirectory;
 extern int debugLevel;
 
-using namespace std;
-
 class Config
 {
     public:
